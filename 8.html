@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="a">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>图片</title>
+	</head>
+	<body>
+		<div class="pic-container">
+			<div class="title">
+				<h4 class="text-center">精美图片</h4>
+			</div>
+			<section>
+				<div class="container-fluid masonry-wrapper scrollimation fade-in in">
+					<div id="projects-container" class="masonry">
+							<img class="img-responsive project-image" src="img/1517e11ef88efebc3416a7602bf66d8.png" height="500" alt="">
+					</div>
+				</div>
+			</section>
+			<div class="timer-container">
+				<header class="header">
+						<div class="line"></div>
+						<h1>生活美好，值得期待！</h1>
+					<div id="banner">
+						<div class="inner">
+							<div class="line"></div>
+							<div class="line"></div>
+							<p class="sub-heading">去更远的光，见更亮的光。</p>
+						</div>
+					</div>
+				</header>
+			</div>
+			<div class="c_meau" style="bottom: 100px;">
+			  <div class="fl">
+			    <div class="fl_o">
+			      <dl class="fl_o_o">
+			        <dt><img src="img/淡黄浅蓝色时尚插画创意店铺活动中文收款码.png"></dt>
+			        <dd>关注微信公众号</dd>
+			      </dl>
+			    </div>
+			    <img src="img/c_meau_7.png"> </div>
+			</div>
+	</body>
+	<script type="text/javascript">
+	    $(window).scroll(function () {
+	        if ($(this).scrollTop() > 100) {
+	            $(".c_meau").stop().show().animate({ bottom: '100px' }, 300);
+	        }
+	        else {
+	            $(".c_meau").stop().animate({ bottom: '-430px' }, 300);
+	        }
+	    });
+	    $('.c_meau .fr_t').click(function () {
+	        $('body,html').animate({ scrollTop: 0 }, 500);
+	        $(".c_meau").animate({ bottom: '-380px', opacity: '0' }, 500);
+	        return false;
+	    });
+	</script>
+</html>

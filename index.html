@@ -1,0 +1,888 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+		<title>20210934叶俊个人博客</title>
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	</head>
+<script src="file:///C:/Users/yejun/Documents/jquery-3.2.1.min.js"></script>
+<style type="text/css">
+	* {
+	    margin: 0;
+	    padding: 0
+	}
+	em,i {
+	    font-style: normal
+	}
+	li {
+	    list-style: none
+	}
+	img {
+	    border: 0;
+	    vertical-align: middle
+	}
+	button {
+	    cursor: pointer
+	}
+	a {
+	    color: #666;
+	    text-decoration: none
+	}
+	a:hover {
+	    color: #c81623
+	}
+	#wrap{
+		background:#55aaff url();
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-position: center -500px;
+		background-size: cover;
+		font-family:Tahoma,Arial,Roboto,”Droid Sans”,”Helvetica Neue”,”Droid Sans Fallback”,”Heiti SC”,sans-self;
+	}
+	.header{
+		line-height: 50px;
+		background: rgba(0,0,0,.4);
+	}
+	.header nav{
+		height: 50px;
+		background:#55557f;
+	}
+	.logo a{
+		color: #fff;
+	}
+	
+	.clear_fix:after{
+		content:'' ;
+		display: block;
+		clear: both;
+	}
+	#banner{
+		height: 650px;
+	
+		color: #FFFFFF;
+	}
+	nav ul li{
+		float: right;
+		margin-right: 30px;
+		line-height: 50px;
+	
+	}
+	.logo{
+		float: left;
+		font-size:20px ;
+		font-weight: 700;
+		margin-left: 50px;
+		letter-spacing:2px;
+		
+	}
+	#banner .inner{
+		max-width: 300px;
+		text-align: center;
+		margin: 0 auto;
+		position: relative;
+		top: 160px;
+	}
+	
+	.line{
+	    height: 2px;
+	    width: 100%;
+	    margin: 0 auto ;
+	}
+	.inner .line{
+		background: #fff;
+		width: 65%;
+		margin-bottom: 10px;
+	}
+	#banner .inner h1{
+	    margin-bottom:20px;
+	}
+	.sub-heading{
+		line-height: 30px;}
+	p{
+			font-size: 18px;
+	}
+	button{
+			background:#e85e17 ;
+			color: #eee;
+			padding: 10px 20px;
+			border: none;
+			margin-top: 20px;
+			border-radius: 5px;
+			outline: none;
+			cursor: pointer;
+	}
+	.inner button:hover{
+			transform: rotate(1080deg) scale(2);
+			transition: 2.5s;
+			z-index: 99;
+		}
+	#banner .inner .more{
+		margin-top: 180px;
+	}
+	.content{
+		position: relative;
+		color: #fff;
+	}
+	.part_one{
+		padding-top: 65px;
+		line-height: 30px;
+		text-align: center;
+		background: rgba(67,178,165,.6);
+	}
+	.wraper{
+		max-width: 1080px;
+		margin: 0 auto;
+		
+	}
+	.wraper h2{
+		font-size: 27px;
+		padding: 15px 0;
+	}
+	.wraper .line{
+		    background: darkgrey;
+		    margin: 20px auto;
+		    width: 40%;
+	}
+	.part_one p{
+		padding: 15px 0;
+	}
+	.icon{
+	    margin-top: 20px;
+	    padding-bottom: 20px;
+	
+	}
+	.icon span img{
+		transform: rotate(-45deg);
+		width: 100%;
+	}
+	.icon>.item{
+		width: 80px;
+		height: 80px;
+		display: inline-block;
+		transform: rotate(45deg);
+		margin:20px 30px ;
+		border: solid 2px green;
+	}
+	.part_tow{
+		background:rgb(33,41,50);
+		color:  #fff ;
+		
+		opacity: 0.95;
+	}
+	.first_left{
+	    width: 41%;
+	}
+	.first_text {
+	    width: 55%;
+		position: relative;
+	    top: 68px;
+		left: 50px;
+	}
+	.first_left img{
+	    width: 100%;
+	}
+	 .first>div{
+		float: left;
+	}
+	.first:nth-child(odd){
+	    background:rgba(255,255,255,.1);
+	}
+	.first{
+		position: relative;
+	}
+	.first:after{
+	    content: '';
+	    display: block;
+	    clear: both;
+	}
+	 .first .first_title{
+	     margin-top:0;
+		 
+	     margin-bottom: 22px;
+	     font-size: 20px;
+	
+	 }
+	
+	.first_text>*{
+		    max-width: 90%;
+			
+	} 
+	.first_text h2{
+		
+	    margin-bottom: 10px;
+	    font-size: 24px;
+	}
+	.first_text p{
+	
+	    font-size: 18px;
+	    letter-spacing: 2px ;
+	}
+	 .part_three{
+	     background: #3f3965;
+	     opacity: 0.9;
+	     color: #fff;
+	 }
+	 .part_three .part_three_wrap{
+	     margin: 0 auto;
+	     max-width: 60%;
+	    padding-top:65px;
+	 }
+	.three_wrap{
+	    margin-bottom: 35px;
+	}
+	.three_wrap h2{
+	    text-align:  center;
+	    margin-bottom: 25px;
+	}
+	.three_wrap .line{
+	    background: #1a0973;
+	    width: 55%;
+	    margin-bottom: 20px;
+	}
+	.card{
+		float: left;
+		min-height: 370px;
+		padding: 50px;
+		max-width: 272px;
+		-webkit-box-sizing: bord    er-box;
+		-moz-box-sizing: border-box;
+		background-color: :;0;	
+	}
+	.card h3{
+	    text-align: center;
+	}
+	.card p {
+	    margin-top: 20px;
+	    font-size: 18px;
+	}
+	.card:nth-child(1){
+		background: rgba(0,0,0,0.05);
+	}
+	.card:nth-child(2){
+	    background: rgba(0,0,0,0.1);
+	}
+	.card:nth-child(3){
+	    background: rgba(0,0,0,0.15);
+	}
+	.card:nth-child(4){
+	    background: rgba(0,0,0,0.2);
+	}
+	.card:nth-child(5){
+	    background: rgba(0,0,0,0.25);
+	}
+	.card:nth-child(6){
+	    background: rgba(0,0,0,0.3);
+	}
+	.footer{
+	    background:#3f3965;
+	    color: #fff;
+	    min-height: 250px;
+	    text-align: center;
+	}
+	ul.share_group{
+		display: block;
+		margin: 0 auto;
+		width: 1080px;
+		padding: 45px;
+	}
+	.share_group li{
+		display: inline-block;
+		padding: 10px;
+	}
+	.share_group li{
+	    display: inline-block;
+	    padding: 10px;
+	}
+	.active{
+		position: relative;
+		width: ;
+	}
+	.active span{
+		position: absolute;
+		width: 100%;
+		height: 4px;
+		bottom: 5px;
+		left: 0;
+		background: #fff;
+	}
+	.mask{
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		background:rgba(0,0,0,0.3) ;
+		display: none;
+		transform: 3s;
+	}
+	.first .text_right{
+		float: right;
+	}
+	.silder{
+		background: #333;
+		position: fixed;
+		right: -300px;
+		top: 0;
+		bottom: 0;
+		width: 10%;
+	}
+	.silder ul li{
+		line-height: 30px;
+		padding: 40px 40px;
+		margin-top: 30px;
+	}
+	.silder ul li:hover{
+		background:rgba(0,0,0,0.6);
+	}
+	.silder ul li a{
+		color: #fff;
+	}
+	.logo a:hover{
+		color: #9999FF;
+	}
+	.top {
+		position: fixed;
+		right: 50px;
+		bottom: 80px;
+		width: 50px;
+		height: 30px;
+	}
+	
+	.c_meau .fl_o_o{ color:#7d7d7d; font-size:20px; }
+	.c_meau .fl_o_o { padding-bottom:50px; border-bottom:0px solid #e5e5e5; width:500px; text-align:center; margin:auto auto 100px auto;}
+	.c_meau .fl_o_o dd{ line-height:100px;}
+	.top p,img{
+	    text-align: center;
+	    width: 100%;	
+	}
+	body{font-size:12px;font-family:"微软雅黑";color:#666;}
+	.conent{width:90px;height:120px;position:absolute;top:20px;}
+	.conent .sition{width:90px;height:120px;position:relative;}
+	.conent .sition .c_header{width:90px;text-align:center;cursor:move;}
+	.conent .sition .c_header .txt{color:#00CC00;font-weight:600;font-size:15px;line-height:30px;box-shadow:1px 1px 1px 1px #000;text-shadow:1px 1px 1px #000;}
+	.conent .sition .c_adver{width:90px;height:90px;background:url("images/back.gif") no-repeat;cursor:pointer;}
+	.conent .sition .sign{width:0px;height:10px;border:2px solid #000;display:block;position:absolute;top:27px;left:46px;}
+	.data{width:260px;height:130px;margin:255px auto;color:#036;}
+	.data p{line-height:20px;}
+	.data p .high{color:red;}
+	.data p .dispaly{color:#00F;}
+	.navbar {
+	  display: flex;
+	  font-family: Microsoft Yahei;
+	  justify-content: space-between;
+	  align-items: center;
+	  background-color: #aaaaff;
+	  color: #000000;
+	  padding: 5px;
+	  font-size: 25px;
+	  color: #000000;
+	  border-color: #000000;
+	}
+	.navbar ul {
+	  display: flex;
+	  list-style: none;
+	  margin: 0;
+	  padding: 0;
+	}
+	.navbar ul li {
+	  margin-right: 50px;
+	}
+	.navbar ul li:last-child {
+	  margin-right: 0;
+	}
+	.navbar ul li a {
+	  color: #0055ff;
+	  text-decoration: none;
+	}
+	.qrcode {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	}
+	.qrcode img {
+	  width: 300px;
+	  height: 300px;
+	  float: left;
+	}
+	.qrcode p {
+	  margin: 5px 0 0;
+	  font-size: 20px;
+	  color: #fff;
+	}
+	.fdad a{
+	 color:#00aaff;
+	 }
+	 .h2{
+		 padding: 5px;
+		 font-size: 25px;
+		 color: #ff007f;
+		 background-color: #aaaaff;
+	 }
+	 .h2 a{
+		 
+	 }
+	 .tag-cloud-container {
+	     display: flex;
+	     justify-content: center;
+	     align-items: center;
+	     height: 100%;
+	 }
+	 .tag-cloud {
+	     display: flex;
+	     flex-wrap: wrap;
+	     background-color: #f5f5f5;
+	     padding: 10px;
+	     border-radius: 5px;
+	     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+	 }
+	 .tag-cloud a {
+	     font-size: 1em;
+	     margin: 5px;
+	     padding: 5px;
+	     background-color: #f5f5f5;
+	     color: #aaaaff;
+	     border-radius: 3px;
+	     text-decoration: none;
+	     transition: all 0.3s ease-in-out;
+	 }
+	 .tag-cloud a:hover {
+	     background-color: #55aaff;
+	     color: #f5f5f5;
+	 }
+	 .h3{
+		 color: cornflowerblue;
+	 }
+	 .blue{
+		 color: cornflowerblue;
+		 font-size: 25px;
+	 }
+</style>
+    <script type="text/javascript">
+        function Responsive($a) {
+            if ($a == true) $("#Device").css("opacity", "100");
+            if ($a == false) $("#Device").css("opacity", "0");
+            $('#iframe-wrap').removeClass().addClass('full-width');
+            $('.icon-tablet,.icon-mobile-1,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
+            $(this).addClass('active');
+            return false;
+        };
+    </script>
+</head>
+<body>
+	<header class="header">
+			<div class="container"> 
+			    <nav id="h5-navbar-collapse" class="collapse navbar-collapse">
+					<nav>
+						<ul class="clear_fix nav_ul">
+							<li class="logo">
+							<a href="file:///C:/Users/yejun/Desktop/688.html#">欢迎光临叶俊的博客！
+							</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="navbar">
+					    <div class="qrcode">
+							<ul>
+							<div class="h2">
+								<h2>博客新热点排行</h2>
+								<p id="a">1&nbsp;&nbsp;<a href="http://hlwksls.bokee.com/507180743.html">第一个发起反黑客事业的“中国Internet之父”</a>&nbsp;&nbsp;<span></span>&nbsp;&nbsp;<i class="icon-txt icon-txt-len-1" style="background-color:#ff9406;">热</i></p>
+								<p id="a">2&nbsp;&nbsp;<a href="http://tiantianxs2009.bokee.com/507186348.html">互联网"黄埔军校”由盛而衰的见证人</a>&nbsp;&nbsp;<span></span>&nbsp;&nbsp;<i class="icon-txt icon-txt-len-1" style="background-color:#ff9406;">热</i></p>
+								<p id="a">3&nbsp;&nbsp;<a href="http://hlwksls.bokee.com/507180738.html">风刮一阵就走，但信念要一直存在</a>&nbsp;&nbsp;<span></span>&nbsp;&nbsp;<i class="icon-txt icon-txt-len-1" style="background-color:#ff9406;">热</i></p>
+								<p>4&nbsp;&nbsp;<a href="http://baiyunq.bokee.com/507186328.html">刘韵洁: 宁可自己吃亏，也不能亏了别人</a>&nbsp;&nbsp;<span></span>&nbsp;&nbsp;<i class="icon-txt icon-txt-len-1" style="background-color:#ff9406;">新</i></p>
+								<p>5&nbsp;&nbsp;<a href="http://tiantianxs2009.bokee.com/507186331.html">访Lotus创始人米切尔卡普尔</a>&nbsp;&nbsp;<span></span></p>
+								<p>6&nbsp;&nbsp;<a href="http://yulesd.bokee.com/507186336.html">王维嘉: 开创一个价值万亿的网络产业</a>&nbsp;&nbsp;<span></span></p>
+								<p>7&nbsp;&nbsp;<a href="http://yulesd.bokee.com/507186339.html">姜奇平: 一个互联网的信仰者</a>&nbsp;&nbsp;<span></span></p>
+								<p>8&nbsp;&nbsp;<a href="http://hlwksls.bokee.com/507180713.html">互联网门述史:人类新文明缔造者群像</a>&nbsp;&nbsp;<span></span></p>
+								<p>9&nbsp;&nbsp;<a href="http://hlwksls.bokee.com/507180719.html">结局还在路上，过程都是财富</a>&nbsp;&nbsp;<span></span></p>
+							</div>
+							<li><img src="img/f5588d90b3366d9ecd7cb40596c2947.jpg"  alt="二维码"><p>微信扫码关注公众号</p>
+							<a href="02.html">留言</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="01.html">博客美文</a><li><a href="0.html">关注</a></li><li><a href="3.html">空间</a></li><li><a href="5.html">放松</a></li>
+							<li><a href="6.html">心悸</a></li>
+							<li><a href="4.html">梦境</a></li>
+							<li><a href="8.html">图片</a></li>
+							<li><a href="7.html">作者</a></li>
+							<li><a href="#">首页</a></li>
+							 </ul>
+					    </div>
+					  </div>
+							<script>
+								$(document).ready(function() {
+								  $('.navbar').append('<div class="qrcode">
+								  <img src="img/f5588d90b3366d9ecd7cb40596c2947.jpg" alt="二维码">
+								  <p>微信扫码关注公众号《栀夏的欢喜》</p></div>');
+								  $('.qrcode').hide();
+								  $('.navbar').hover(function() {
+								    $('.qrcode').fadeIn();
+								  }, function() {
+								    $('.qrcode').fadeOut();
+								  });
+								});
+							</script>
+						</body>
+							<div class="tag-cloud-container">
+							    <div class="tag-cloud">
+								<h3 align="center" class="blue">个人学习云平台</h3>
+							        <a href="http://www.51sjk.com/jiaocheng/topic/javascript.html">JavaScript</a>
+							        <a href="http://www.51sjk.com/jiaocheng/topic/jquery.html">jQuery</a>
+							        <a href="http://www.51sjk.com/jiaocheng/topic/html5.html">HTML5</a>
+							        <a href="http://www.51sjk.com/jiaocheng/topic/css3.html">CSS3</a>
+							        <a href="http://www.51sjk.com/jiaocheng/topic/php.html">PHP</a>
+							        <a href="http://www.51sjk.com/jiaocheng/topic/mysql.html">MySQL</a>
+							        <a href="http://www.51sjk.com/jiaocheng/topic/bootstrap4.html">bootstrap4</a>
+							        <a href="http://www.51sjk.com/jiaocheng/topic/android.html">Android</a>
+							        <a href="http://www.51sjk.com/jiaocheng/topic/weixinxiaochengxukai.html">微信小程序</a>
+							        <a href="https://texttools.cn/tools">AI文本工具</a>	
+							    </div>
+							</div>
+							<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+							<script>
+							    $(document).ready(function() {
+							        $(".tag-cloud a").each(function(index) {
+							            var fontsize = Math.floor(Math.random() * 20 + 10);
+							            $(this).css("font-size", fontsize + "px");
+							        });
+							    });
+							</script>
+	<body>
+<div id="wrap">
+	<header class="header">
+<img src="921b8e63fbcfa6ec3ec8b5015b9fbd0.jpg" width="940" height="788" alt="">	
+		<div id="banner">
+			<div class="inner">
+				<div class="line"></div>
+				<h1>20210934叶俊</h1>
+				<div class="line"></div>
+				<p class="sub-heading">就读院校：徽商职业学院</p>
+				<p class="sub-heading">就读专业：软件技术</p>
+				<p class="sub-heading">邮箱：E-mail:2172625972@qq.com</p>
+				<p class="sub-heading">安徽省合肥市</p>
+				<button class="btn">你好呀!</button>
+			</div>
+		</div>
+		<div class="conent">
+			<div class="sition">
+				<div class="c_header"><strong class="txt">欢迎您!</strong></div>
+				<div class="c_adver"></div>
+				<i class="sign"></i>
+			</div>
+		</div>
+    </header>
+	  <div class="content"> 
+		<section class="part_one">
+				<div class="wraper">
+					<h2>那年盛夏的夏天</h2>
+					<div class="first_tittle">That midsummer summer.
+					</div>
+				  <div class="line"></div>
+				  <p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 看海、沐浴阳光，一杯清新丰盈 一个夏天，跳动的心，盛夏。</p>
+				  <p>Looking at the sea, basking in the sunshine, a cup of fresh and abundant summer, a beating heart, midsummer.</p>
+				</div>
+		</section>
+		<section class="part_tow">
+		  <div class="first">
+					<div class="first_left">
+					<img src="img/cb10feca7a7f599daf2b34d6977a25b.png" alt=""></div>
+					<div class="first_text">
+						<h2>青春是一场远行、一场相逢</h2>
+						<div class="first_title">短暂又难忘</div>
+						<p>青春是一场远行，回不去了。青春是一场相逢，忘不掉了。但青春却留给我们最宝贵的友情。友情其实很简单，只要那么一声简短的问候、一句轻轻的谅解、一份淡淡的惦记，就足矣。当我们在毕业季痛哭流涕地说出再见之后，请不要让再见成了再也不见。</p>
+					</div>
+		  </div>
+		  <div class="first">
+				    <div class="first_text">
+				        <h2>生活也有所期待</h2>
+				        <div class="first_title">
+				          <p>向阳盛开才是我们</p>
+				          <p>&nbsp;</p>
+				          <p>生活美好，值得期待</p>
+				        </div>
+				        <p>那是我所向往的、美好的地方，在那里遇见了属于我们的的青春</p>
+				    </div>
+				    <div class="first_left text_right"> <img src="img/1517e11ef88efebc3416a7602bf66d8.png" alt=""></div>
+		  </div>
+		  <div class="first">
+				    <div class="first_left">
+			        <img src="img/ffb2ca150194d89eda13d37fab4aed5.png" alt=""></div>
+					<div class="first_text">
+					  <h2>奔赴和热爱</h2>
+					  <div class="first_title"></div>
+							<p>风也来自很远的地方，我们一起去看看也无妨 </p>
+							<p>&nbsp;</p>
+							<p>走遍世界的每个角落， 一起奔赴下一场属于我们的热爱</p>
+					</div>
+		  </div>
+	    </section>
+			<section class="part_three">
+				<div class="part_three_wrap">
+					<div class="three_wrap">
+					  <h2>奔赴和热爱</h2>
+					  <div class="line">
+			          </div>
+					         <div>我们始终要对生活保持一份热爱，无论是学习还是情感，热爱是对生活的一种态度，所以我们要多一份热爱，少一分埋怨，在我们逐渐的长大，我们都会各自奔赴于我们的前程，正所谓奔赴山海，所以让我们不负韶华，努力前行，去感受大自然的无限魅力。</div>
+			      </div>
+					     <div class="card_grop clear_fix">
+					         <div class="card">
+					           <h3>Go for Love</h3>
+					           <p>岁月模糊了容颜，光影拉远了记忆的最初，摇曳在流年枯萎里，再度凝眸回首，一切以袅袅如烟。年华斑驳如画，回忆散落似沙，再次拾起记忆的残片，那些难忘的、铭心的，零落渐疏。 </p>
+					         </div>
+					         <div class="card">
+					           <h3>Go for Love</h3>
+					           <p>持有最初的那种热烈地爱，去面对下一次的挑战或者是感情。喻指荒远偏僻之处也指高深、繁多或重大的事情，可以是下一次的爱恋，也可以是下一次的困难。</p>
+					         </div>
+					     </div>
+		      </div>
+			</section>
+	  </div>
+	  <body>
+	      <div id="switcher">
+	          <div class="center">
+	              <ul>
+	                  <script>
+	                      jQuery('#output').qrcode({ width: 200, height: 200, text: window.location.href });
+	                  </script>
+	              </ul>
+	          </div>
+	      </div>  
+	      <script type="text/javascript">
+	                  $(document).ready(function () {
+	                      $(".fdr").click(function () {
+	                          $(".fdad").hide();
+	                      });
+	                  });
+	      </script>
+	      <script>
+	          var _hmt = _hmt || [];
+	          (function () {
+	              var hm = document.createElement("script");
+	              hm.src = "//hm.baidu.com/hm.js?b3a3fc356d0af38b811a0ef8d50716b8";
+	              var s = document.getElementsByTagName("script")[0];
+	              s.parentNode.insertBefore(hm, s);
+	          })();
+	      </script>
+	  <div class="c_meau" style="bottom: 100px;">
+		  <img src="img/8499ac0eb6bf3a93269d57143eec499.png" alt="">
+	    <div class="fl">
+	      <div class="fl_o">
+	        <dl class="fl_o_o">
+				<h2>微信扫描二维码,关注《栀夏的欢喜》公众号</h2>
+	          <dt><img src="img/淡黄浅蓝色时尚插画创意店铺活动中文收款码.png" alt=""></dt>
+			  <img src="img/图标.png">
+	        </dl>
+	  </div>
+	  <script type="text/javascript" src="./jquery-1.8.3.min.js.下载"></script>
+	  <script type="text/javascript">
+	      $(window).scroll(function () {
+	          if ($(this).scrollTop() > 100) {
+	              $(".c_meau").stop().show().animate({ bottom: '100px' }, 300);
+	          }
+	          else {
+	              $(".c_meau").stop().animate({ bottom: '-430px' }, 300);
+	          }
+	      });
+	      $('.c_meau .fr_t').click(function () {
+	          $('body,html').animate({ scrollTop: 0 }, 500);
+	          $(".c_meau").animate({ bottom: '-380px', opacity: '0' }, 500);
+	          return false;
+	      });
+	  </script>
+	      <script type="text/javascript">
+	                  $(document).ready(function () {
+	                      $(".fdr").click(function () {
+	                          $(".fdad").hide();
+	                      });
+	                  });
+	      </script>
+	      <script>
+	          var _hmt = _hmt || [];
+	          (function () {
+	              var hm = document.createElement("script");
+	              hm.src = "//hm.baidu.com/hm.js?b3a3fc356d0af38b811a0ef8d50716b8";
+	              var s = document.getElementsByTagName("script")[0];
+	              s.parentNode.insertBefore(hm, s);
+	          })();
+	      </script>
+		<footer class="footer">
+		    <ul class="share_group">
+<li></li>
+   <h1 align="center">开心&emsp;&emsp;幸运&emsp;&emsp;美好&emsp;&emsp;努力&emsp;&emsp;积极</h1>
+   <h1 align="center">Lucky, beautiful, hardworking, positive.</h1>
+   <h1 align="center">一些美好的事物正在井然有序地发生</h1>
+   <h1 align="center">Sunday Morning</h1>
+   <h1 align="center">Some small beauties are happening in an orderly manner.</h1>
+    <br>
+    <li></li>
+    <br />
+	<script>
+	    var _hmt = _hmt || [];
+	    (function () {
+	        var hm = document.createElement("script");
+	        hm.src = "//hm.baidu.com/hm.js?b3a3fc356d0af38b811a0ef8d50716b8";
+	        var s = document.getElementsByTagName("script")[0];
+	        s.parentNode.insertBefore(hm, s);
+	    })();
+	</script>
+	
+				<div class="container">
+					<div class="col-sm-12 text-center">
+						 2023 叶俊的个人博客 版权所有
+						<a href="" target="_blank" class="">叶俊的个人博客</a>
+					</div>
+				</div>
+		    </ul>
+		</footer>
+</div>
+<script>
+		$(function(){
+				$('.nav_ul li').click(function () {
+		            $(this).addClass('active')
+		            $(this).siblings().removeClass('active')
+		        })
+				$('.silder_bar').click(function(){
+					showSilder();
+				})
+				function showSilder(){
+					$('.mask').fadeIn();
+					$('.silder').css('right',0)
+				}
+				function hideSilder(){
+					$('.mask').fadeOut();
+					$('.silder').css('right',-300)
+				}
+				$('.mask').click(function(){
+					hideSilder()
+				})
+				$('.top').click(function(){
+					$('body,html').animate({
+					    scrollTop:0
+					},300)
+				})
+				$(window).on('scroll',function () {
+					if($(window).scrollTop()>100){
+						$('.top').css('display','block')
+					}else{
+						$('.top').css('display','none')
+					}
+				})
+				$('.btn').click(function(){
+					alert('20210934叶俊')
+				})
+	</script>
+</body>
+</html>
+		<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+		<script src="https://www.jq22.com/jquery/vue.min.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function() {
+				var qcloud = {};
+				$('[_t_nav]').hover(function() {
+					var _nav = $(this).attr('_t_nav');
+					clearTimeout(qcloud[_nav + '_timer']);
+					qcloud[_nav + '_timer'] = setTimeout(function() {
+						$('[_t_nav]').each(function() {
+							$(this)[_nav == $(this).attr('_t_nav') ? 'addClass' : 'removeClass']('nav-up-selected');
+						});
+						$('#' + _nav).stop(true, true).slideDown(200);
+					}, 150);
+				}, function() {
+					var _nav = $(this).attr('_t_nav');
+					clearTimeout(qcloud[_nav + '_timer']);
+					qcloud[_nav + '_timer'] = setTimeout(function() {
+						$('[_t_nav]').removeClass('nav-up-selected');
+						$('#' + _nav).stop(true, true).slideUp(200);
+					}, 150);
+				});
+			});
+		</script>
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var timer=null;
+		var _left=0;
+		var _top=20;
+		var top_folg=false;
+		var left_folg=true;
+		var win_width=$(window).width()-$(".conent").width();
+		var win_height=$(window).height()-$(".conent").height();
+		$("#liulan").html(win_height+"px");
+		$("#sumwid").html(win_width+"px");;
+		action();/*执行走动*/
+		$(".conent").mouseover(function(){
+			clearInterval(timer);
+			$(this).find(".c_adver").css({"background":"url('img/no.gif')","bakcground-repeat":"no-repeat"});
+			$(this).find(".txt").text("放开我!!!");
+
+		}).mouseout(function(){
+			action();
+			$(this).find(".txt").text("欢迎您光临!");
+			$(this).find(".c_adver").css({"background":"url('img/back.gif')","bakcground-repeat":"no-repeat"});
+		});
+
+		$(window).resize(function(){
+			conobj=$(".conent");
+			win_width=$(window).width()-conobj.width();
+			win_height=$(window).height()-conobj.height();
+			$("#liulan").html(win_height+"px");
+			$("#sumwid").html(win_width+"px");;
+		});
+		function action(){
+			timer=setInterval(function(){
+				if(!top_folg){
+					_top++;
+					if(_top>=win_height){top_folg=true;};
+				}else{
+					_top--;
+					if(_top<=0){top_folg=false;};
+				};
+				if(left_folg){
+					 _left++;
+					if(_left>=win_width){left_folg=false;};
+				}else{
+					_left--;
+					if(_left<=0){left_folg=true;};
+				};
+                $("#textone").html(_top+"px");
+				$("#timewid").html(_left+"px");
+				$(".conent").animate({
+					left:_left,
+					top:_top
+				},3);
+			},15);
+		};
+		$(".conent .c_adver").dblclick(function(){
+			$(this).parents(".conent").slideUp(500,function(){
+				$(this).remove();
+				clearInterval(timer);
+			});
+		});
+		var state;
+		$(".c_header").mousedown(function(event){
+		state=false;
+		var x=event.clientX;
+		var y=event.clientY;
+		var obj=$(this).parents(".conent");
+		var c_left=obj.offset().left;
+		var c_top=obj.offset().top;
+				$(document).mousemove(function(e){
+					if(!state){
+						  var x1=e.clientX;
+						  var y1=e.clientY;
+						  var action_left=x1-x+c_left;
+						  var action_top=y1-y+c_top;
+						  if(action_left<=0){action_left=0;};
+						  if(action_top<=0){action_top=0;}
+						  if(action_left>=win_width){action_left=win_width;};
+						  if(action_top>=win_height){action_top=win_height;};
+						  obj.css({top:action_top,left:action_left});
+						  _left=action_left;
+						  _top=action_top;
+						  $("#text").html(_top+"px");
+						  $("#dywid").html(_left+"px");
+						};
+				}).mouseup(function(){
+					state=true;
+				});
+		});
+	});
+</script>
+</body>
+</html>

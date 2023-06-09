@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>梦境</title>
+<link rel="stylesheet" href="statics/css/swiper.css" />
+<link rel="stylesheet" href="statics/css/animate.min.css" />
+<link rel="stylesheet" href="statics/css/style.css" />
+</head>
+<body>
+<div class="swiper-container">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide slide1">
+		</div>
+		<div class="swiper-slide slide2">
+			<div class="inner">
+				<img src="" class="ani img1" swiper-animate-effect="fadeInUp" swiper-animate-duration="2s" swiper-animate-delay="0.5s">
+			</div>
+		</div>
+		<div class="swiper-slide slide3">
+		</div>
+		<div class="swiper-slide slide4">
+			<div class="inner">
+				<div class="banner-text ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="2s" swiper-animate-delay="0.5s">
+					<h3><em>[ 好物美文图书推荐 ]</em></h3>
+					<h2>好物<em>美文图书推荐</em></h2>
+					<p>好物美文图书推荐</p>
+					<span class="btn-primary" href="javascript:">立刻阅读</span>
+				</div>
+				<img src="statics/images/a4c93f6a77c829125047fe86b7733a4.png" / class="ani img1" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+				<img src="statics/images/image-sub4-r2.png" / class="ani img2" swiper-animate-effect="fadeInDown" swiper-animate-duration="2s" swiper-animate-delay="0.5s">
+			</div>
+		</div>
+		<div class="swiper-slide slide5">
+			<div class="inner">
+				<div class="banner-text ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="2s" swiper-animate-delay="0.5s">
+					<h3><em>[ 好物美文图书推荐 ]</em></h3>
+					<h2>好物<em>美文图书推荐</em></h2>
+					<p>好物美文图书推</p>
+					<span class="btn-primary" href="javascript:">立刻阅读</span>
+				</div>
+				<img src="statics/images/f5a072d4bc60dc7c092d0a02ae2c3b9.png" / class="ani img1" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+				<img src="statics/images/image-sub5-r2.png" / class="ani img2" swiper-animate-effect="fadeInDown" swiper-animate-duration="2s" swiper-animate-delay="0.5s">
+			</div>
+		</div>
+	</div>
+	<div class="pagination"></div>
+	<div class="cover"></div>
+
+	<div class="home-events">
+		<div class="home-events-box" style="min-height:30px;">
+
+			<div class="home-events-box-wrapper" style="min-height:30px;">
+
+				<div class="home-events-box-item">
+					<a href="https://www.yodu.org/book/6305/?1584856395">
+						<i>
+				<img src="statics/images/events-icon6.png" alt="青春奇幻之旅">
+				<img src="statics/images/events-icon6-active.png" alt="青春奇幻之旅">
+			</i>
+						<h2>青春奇幻之旅</h2>
+						<p class="js-title" title="">《平行世界的另一个你》</p>
+					</a>
+				</div>
+
+				<div class="home-events-box-item">
+					<a href="https://read.douban.com/ebook/1678366/">
+						<i>
+				<img src="statics/images/events-icon1.png" alt="青春情感之旅">
+				<img src="statics/images/events-icon1-active.png" alt="青春情感之旅">
+			</i>
+						<h2>青春情感之旅</h2>
+						<p class="js-title" title="">《起风了》</p>
+					</a>
+				</div>
+
+				<div class="home-events-box-item">
+					<a href="https://ubook.reader.qq.com/book-detail/25424404">
+						<i>
+				<img src="statics/images/events-icon2.png" alt="青春文学之旅">
+				<img src="statics/images/events-icon2-active.png" alt="青春文学之旅">
+			</i>
+						<h2>青春文学之旅</h2>
+						<p class="js-title" title="">《世界欠我一个你》</p>
+					</a>
+				</div>
+
+				<div class="home-events-box-item">
+					<a href="https://www.jjwxc.net/onebook.php?novelid=3676002">
+						<i>
+				<img src="statics/images/events-icon9.png" alt="青春浪漫之旅">
+				<img src="statics/images/events-icon9-active.png" alt="青春浪漫之旅">
+			</i>
+						<h2>青春浪漫之旅</h2>
+						<p class="js-title" title="">《偷偷藏不住》</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="statics/js/swiper.min.js"></script>
+<script src="statics/js/swiper.animate1.0.2.min.js"></script>
+<script>
+	var mySwiper = new Swiper('.swiper-container', {
+		pagination: '.pagination',
+		paginationClickable: true,
+		autoplay: 5000,
+		speed: 1,
+		loop:true,
+
+		onInit: function(swiper) { 
+			swiperAnimateCache(swiper); 
+			swiperAnimate(swiper); 
+		},
+		onSlideChangeEnd: function(swiper) {
+			swiperAnimate(swiper); 
+		}
+	})
+</script>
+</body>
+</html>

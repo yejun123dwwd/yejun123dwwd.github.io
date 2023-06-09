@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>博客美文</title>
+ <style>
+ body{
+ background-color: #F0F0F0;
+ }
+ *{
+ border: 0px;
+ padding: 0px;
+ margin: 0px;
+ font-size: 14px;
+ }
+ a:hover{color:red;text-decoration:none;}
+ #top{
+ width: 100%;
+ height: 90px;
+ background-color: white;
+ border-bottom: 1px solid #bbbbbb;
+ }
+ #menu{
+ width: 1000px;
+ overflow: hidden;
+ margin: 0 auto;
+
+ }
+ #menu ul{
+ list-style-type: none;
+
+ }
+ #menu ul li{
+ float: left;
+ height: 90px;
+ line-height: 90px;
+ margin-right: 50px;
+
+ }
+ #menu ul li a{
+ color: #65b5ff;
+ width: 300px;
+ height: 300px;
+ text-decoration: none;
+ display: inline-block;
+
+ }
+ #menu ul li a:hover{color: #65b5ff;text-decoration: none}
+ #box{
+ width: 900px;
+ height: 370px;
+ background-color: white;
+ margin: 0 auto;
+ margin-top: 50px;
+ padding: 50px;
+ }
+ #box p{
+ text-align: center;
+ }
+ #box-form{
+
+ text-align: center;
+ }
+ .p_line{
+ border-bottom: 1px solid #bbbbbb;
+ height: 40px;
+ line-height: 50px;
+ }
+ .txtBox{
+ border: 1px solid #bbbbbb;
+ width: 350px;
+ margin-top: 30px;
+ height: 50px;
+ padding-left: 10px;
+ border-radius: 5px;
+ }
+ .btn {
+ width: 365px;
+ height: 50px;;
+ color: white;
+ background-color: #DD0000;
+ margin-top: 25px;
+ }
+ #bottom{
+ width:100%;
+ background-color:#323333;
+ height:300px;
+ margin-top:70px;
+ }
+ #bottom-content{
+ width:1000px;
+ overflow:hidden;
+ margin:0 auto;
+ color:white;
+ height:280px;
+ }
+ #content-left{
+ width:460px;
+ float:left;
+ height:280px;
+ }
+ #bottom-content p{
+ margin-top:10px;
+ }
+ #content-right{
+ width:460px;
+ float:right;
+ height:280px;
+ text-align: center;
+ margin-top: 40px;
+ }
+ .color{
+ color: #323333;
+ }
+ #blog{
+ width: 1000px;
+ overflow: hidden;
+ margin: 0 auto;
+
+ margin-top: 20px;
+ }
+ #blog ul{
+ list-style-type: none;
+ }
+ #blog ul li{
+ background-color: white;
+ padding: 20px;
+ width: 100%;
+ overflow: hidden;
+ margin-top: 15px;
+ }
+ .blog-left{
+ float: left;
+ width: 680px;
+ overflow: hidden;
+
+ }
+ .blog-right{
+ float: left;
+ margin-left: 10px;
+
+ width: 280px;
+ overflow: hidden;
+ }
+ .blog-right img{
+ width: 280px;
+ height: 200px;
+ }
+ .title{
+ text-decoration:none;
+ font-size: 26px;
+ }
+ .blog-left p{
+ color: gray;
+ }
+ .blog-left img{
+ width: 20px;
+ margin-right: 10px;
+ vertical-align: middle;
+ }
+ .page{
+ height: 40px;
+ margin-top: 10px;
+ text-align: center;
+ padding-top: 20px;
+ }
+ .page a{
+ border: 1px solid #71b0bb;
+ text-decoration: none;
+ margin: 5px;
+ padding: 5px 10px;
+ }
+ .page a:link,.page a:visited{
+ color: #000000;
+ }
+ .page a:hover,.page a:active{
+ color: #FFF;
+ background-color: #bbac5c;
+ }
+ .mi{
+ padding-left: 90px;
+
+ }
+ #blog-content{
+ width: 940px;
+ overflow: hidden;
+ padding: 30px;
+ background-color: white;
+ margin: 0 auto;
+ border-top: 2px solid #e2b709;
+ margin-top: 30px;
+ }
+ .siztitle{
+ font-size: 28px;
+ text-align: center;
+
+ }
+ #blog-content p{
+ color: black;
+ }
+ #blog-content img{
+ width: 20px;
+ margin-right: 10px;
+ vertical-align: middle;
+ }
+ .rev{
+ border-left: 2px solid #e2b709;
+ width: 100%;
+ overflow: hidden;
+
+ margin-top: 20px;
+ padding-left: 10px;
+
+ }
+ .content{
+ margin-top: 20px;
+ line-height: 28px;
+ }
+ .pl-p{
+ width: 1000px;
+ overflow: hidden;
+ margin: 0 auto;
+ margin-top: 20px;
+ font-size: 20px;
+ padding-left: 20px;
+ }
+ #pl-div{
+ width: 920px;
+ padding: 40px;
+ background-color: white;
+ overflow: hidden;
+ margin: 0 auto;
+ margin-top: 30px;
+ }
+ #pl-left{
+ float: left;
+ width: 100px;
+ overflow: hidden;
+ text-align: center;
+ }
+ #pl-right{
+ float: left;
+ margin-left: 30px;
+ width: 700px;
+ overflow: hidden;
+ }
+ .pl-txt{
+ border: 1px solid #777777;padding: 20px
+ }
+ .pl-input1{
+ border: 1px solid #777777;width: 150px;height:30px;margin-top: 30px
+ ;
+ }
+ .pl-input2{
+ background-color: #65b5ff;color: white;width: 110px;height: 40px;margin-left: 580px
+ }
+ </style>
+</head>
+<body>
+<div id="top">
+ <div id="menu">
+ <ul>
+ <li></li>
+ <li><a href="">博客美文</a></li>
+ <li><a href="02.html">留言评论</a></li>
+ </ul>
+ </div>
+</div>
+
+<div id="blog">
+ <ul>
+ <li>
+ <div class="blog-left">
+ <p ><a href="http://www.chinaweekly.cn/html/travel/47276.html" class="title">春游苏北水乡——溱潼古镇</a></p>
+ <p style="margin-top: 20px">溱潼，古称秦泓。地处苏北的南通、盐城、泰州三市交界处，这里河港交织、气候湿润，境内多处发现麋鹿化石遗骨和出土新石器时代的石斧、石器。溱潼一度临海，夏商时属扬州，春秋时属吴国。这里水草丰茂，麋鹿“千百成群”，农民“不耕而作”。镇区四面环水，波光粼粼，环境优美，素有“水乡明珠”之称。</p>
+ <p style="margin-top: 90px">2023/05/17</p>
+ </div>
+ <div class="blog-right"></div>
+ </li>
+ <li>
+ <div class="blog-left">
+ <p ><a href="http://www.chinaweekly.cn/html/travel/47242.html" class="title">“客家人的摇篮”——赣州</a></p>
+ <p style="margin-top: 20px">客家这一称谓源于魏晋南北朝时期的给客制度及唐宋时期的客户制度。移民入籍者皆编入客籍，而客籍人遂称为客家人。“客家人”通常来说，是指古代秦始皇时期开始流放的各国贵族、文人、徒人、探险家、戍边的军人和那些不愿受异族当权者奴役的名人志士，以及因中原北方战乱饥荒等灾难被迫迁徙到南方的古汉族人。但随着后来各朝代的变迁，在千年历史潮流中，中原北方各民族不断动态融合，而南方地处边远荒凉之地的一支汉族先民而则相对静止。在保持古中原文化原生态风貌和血统的基础上，吸收了当地少数民族文化精华，成为具有新特质文化和古汉族人基因血统比例最高的独特族群，这就是客家人。
+客家人的历史就是一部冒险开拓史，不是所有南迁的汉族人都是客家人。客家人有自己独特的方言、文化习俗和建筑形式，有自己的客家山歌和家族体系。最近笔者走进了有中国“客家人的摇篮”之誉的江西省赣南地区。</p>
+ <p style="margin-top: 90px">2023/05/16</p>
+ </div>
+ <div class="blog-right"></div>
+ </li>
+ <li>
+ <div class="blog-left">
+ <p ><a href="http://www.chinaweekly.cn/html/travel/47240.html" class="title">荀子故里 人文安泽</a></p>
+ <p style="margin-top: 20px">安泽以安吉、泽泉两地合称而为名，是三晋大地上的一块人间净土，犹如朴实的玉石，闪烁着圣境般的光泽。当它摘去深居太岳山脉的神秘面纱，身披古冀州治所、伊氏邑、猗氏县、岳阳诸多历史名称，出现在时代前列时，好似道德经“不显自彰”的有为者，以善行、善德、善成的方式引起了社会的瞩目。</p>
+ <p style="margin-top: 90px">2023/05/16</p>
+ </div>
+ <div class="blog-right"></div>
+ </li>
+ <li>
+ <div class="blog-left">
+ <p ><a href="http://www.chinaweekly.cn/html/travel/45679.html" class="title">昌江：木棉花开红似火 天上云霞相映红</a></p>
+ <p style="margin-top: 20px">海南省昌江黎族自治县素有“中国木棉之乡”的美称。每年三四月份，是昌江水畔木棉花开最艳丽的季节。在开花季，木棉花开遍田间地头，漫步木棉花海之中赏花，别有一番情趣，仿佛穿梭于一团团火焰之中。昌江，位于海南的西北部，依山面海，距海口市196公里，这里属于典型的热带季风气候区，全年无冬，四季如春，日照充足，生态环境甚好。走上昌江宝山木棉观景台，这里山岭起伏，梯田层层，红棉成片，山水相映。登高远望，层层叠叠的梯田、木棉、绿树在轻纱般的白云沉浮之间时隐时现。山脚下，各种各样的绿树丛中，浮现着团团木棉红，一副绿树红花环抱梯田的图景在大地山川之间徐徐展开。</p>
+ <p style="margin-top: 80px">2023/04/06</p>
+ </div>
+ <div class="blog-right"></div>
+ </li>
+ </ul>
+
+ <div class="page">
+ <a href="#">首页</a> <a href="#">1</a> <a href="03.html">2</a> <a href="04.html">3</a> <a href="05.html">尾页</a>
+ </div>
+</div>
+</body>
+</html>

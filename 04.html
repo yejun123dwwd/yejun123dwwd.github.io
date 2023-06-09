@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>博客美文</title>
+ <style>
+ body{
+ background-color: #F0F0F0;
+ }
+ *{
+ border: 0px;
+ padding: 0px;
+ margin: 0px;
+ font-size: 14px;
+ }
+ a:hover{color:red;text-decoration:none;}
+ #top{
+ width: 100%;
+ height: 90px;
+ background-color: white;
+ border-bottom: 1px solid #bbbbbb;
+ }
+ #menu{
+ width: 1000px;
+ overflow: hidden;
+ margin: 0 auto;
+
+ }
+ #menu ul{
+ list-style-type: none;
+
+ }
+ #menu ul li{
+ float: left;
+ height: 90px;
+ line-height: 90px;
+ margin-right: 50px;
+
+ }
+ #menu ul li a{
+ color: #65b5ff;
+ width: 300px;
+ height: 300px;
+ text-decoration: none;
+ display: inline-block;
+
+ }
+ #menu ul li a:hover{color: #65b5ff;text-decoration: none}
+ #box{
+ width: 900px;
+ height: 370px;
+ background-color: white;
+ margin: 0 auto;
+ margin-top: 50px;
+ padding: 50px;
+ }
+ #box p{
+ text-align: center;
+ }
+ #box-form{
+
+ text-align: center;
+ }
+ .p_line{
+ border-bottom: 1px solid #bbbbbb;
+ height: 40px;
+ line-height: 50px;
+ }
+ .txtBox{
+ border: 1px solid #bbbbbb;
+ width: 350px;
+ margin-top: 30px;
+ height: 50px;
+ padding-left: 10px;
+ border-radius: 5px;
+ }
+ .btn {
+ width: 365px;
+ height: 50px;;
+ color: white;
+ background-color: #DD0000;
+ margin-top: 25px;
+ }
+ #bottom{
+ width:100%;
+ background-color:#323333;
+ height:300px;
+ margin-top:70px;
+ }
+ #bottom-content{
+ width:1000px;
+ overflow:hidden;
+ margin:0 auto;
+ color:white;
+ height:280px;
+ }
+ #content-left{
+ width:460px;
+ float:left;
+ height:280px;
+ }
+ #bottom-content p{
+ margin-top:10px;
+ }
+ #content-right{
+ width:460px;
+ float:right;
+ height:280px;
+ text-align: center;
+ margin-top: 40px;
+ }
+ .color{
+ color: #323333;
+ }
+ #blog{
+ width: 1000px;
+ overflow: hidden;
+ margin: 0 auto;
+
+ margin-top: 20px;
+ }
+ #blog ul{
+ list-style-type: none;
+ }
+ #blog ul li{
+ background-color: white;
+ padding: 20px;
+ width: 100%;
+ overflow: hidden;
+ margin-top: 15px;
+ }
+ .blog-left{
+ float: left;
+ width: 680px;
+ overflow: hidden;
+
+ }
+ .blog-right{
+ float: left;
+ margin-left: 10px;
+
+ width: 280px;
+ overflow: hidden;
+ }
+ .blog-right img{
+ width: 280px;
+ height: 200px;
+ }
+ .title{
+ text-decoration:none;
+ font-size: 26px;
+ }
+ .blog-left p{
+ color: gray;
+ }
+ .blog-left img{
+ width: 20px;
+ margin-right: 10px;
+ vertical-align: middle;
+ }
+ .page{
+ height: 40px;
+ margin-top: 10px;
+ text-align: center;
+ padding-top: 20px;
+ }
+ .page a{
+ border: 1px solid #71b0bb;
+ text-decoration: none;
+ margin: 5px;
+ padding: 5px 10px;
+ }
+ .page a:link,.page a:visited{
+ color: #000000;
+ }
+ .page a:hover,.page a:active{
+ color: #FFF;
+ background-color: #bbac5c;
+ }
+ .mi{
+ padding-left: 90px;
+
+ }
+ #blog-content{
+ width: 940px;
+ overflow: hidden;
+ padding: 30px;
+ background-color: white;
+ margin: 0 auto;
+ border-top: 2px solid #e2b709;
+ margin-top: 30px;
+ }
+ .siztitle{
+ font-size: 28px;
+ text-align: center;
+
+ }
+ #blog-content p{
+ color: black;
+ }
+ #blog-content img{
+ width: 20px;
+ margin-right: 10px;
+ vertical-align: middle;
+ }
+ .rev{
+ border-left: 2px solid #e2b709;
+ width: 100%;
+ overflow: hidden;
+
+ margin-top: 20px;
+ padding-left: 10px;
+
+ }
+ .content{
+ margin-top: 20px;
+ line-height: 28px;
+ }
+ .pl-p{
+ width: 1000px;
+ overflow: hidden;
+ margin: 0 auto;
+ margin-top: 20px;
+ font-size: 20px;
+ padding-left: 20px;
+ }
+ #pl-div{
+ width: 920px;
+ padding: 40px;
+ background-color: white;
+ overflow: hidden;
+ margin: 0 auto;
+ margin-top: 30px;
+ }
+ #pl-left{
+ float: left;
+ width: 100px;
+ overflow: hidden;
+ text-align: center;
+ }
+ #pl-right{
+ float: left;
+ margin-left: 30px;
+ width: 700px;
+ overflow: hidden;
+ }
+ .pl-txt{
+ border: 1px solid #777777;padding: 20px
+ }
+ .pl-input1{
+ border: 1px solid #777777;width: 150px;height:30px;margin-top: 30px
+ ;
+ }
+ .pl-input2{
+ background-color: #65b5ff;color: white;width: 110px;height: 40px;margin-left: 580px
+ }
+ </style>
+</head>
+<body>
+<div id="blog">
+ <ul>
+ <li>
+ <div class="blog-left">
+ <p ><a href="http://www.chinaweekly.cn/html/travel/42881.html" class="title">中国“幸福宜居之城”——阳江</a></p>
+ <p style="margin-top: 20px">阳江市位于广东省西部沿海地区，紧邻珠三角，是珠三角辐射粤西的战略支点。阳江是岭南文化的一部分，其源远流长的“高凉文化”“海丝文化”“漠阳文化”等多种文化交相辉映，同时也受“广府文化”影响。阳江曾是海上丝绸之路的重要中转站和补给站，是汉代、两晋、南北朝古高凉郡的郡治和隋时冼夫人幕府的治所。阳江山海兼优、风光秀丽，拥有中国十大最美海岛之一、首批国家级海洋公园海陵岛（5A级），拥有以国家地质公园凌霄岩（4A级）为代表的阳春山水，还有宋代古沉船“南海一号”博物馆。</p>
+ <p style="margin-top: 90px">2022/11/16</p>
+ </div>
+ <div class="blog-right"></div>
+ </li>
+ <li>
+ <div class="blog-left">
+ <p ><a href="http://www.chinaweekly.cn/html/travel/42260.html" class="title">张家界的秋色美如画</a></p>
+ <p style="margin-top: 20px">世界自然遗产——张家界武陵源索溪峪。金秋时节，层林尽染，叠翠流金，张家界最美的季节来了！每一座山峰，每一条小路，每一个角落，都让人怦然心动…… 秋天的张家界，满山五颜六色的树木，把天子山、袁家界、黄石寨、杨家界等景区的一座座石峰装扮得风情万种。</p>
+ <p style="margin-top: 90px">2022/10/14</p>
+ </div>
+ <div class="blog-right"></div>
+ </li>
+ <li>
+ <div class="blog-left">
+ <p ><a href="http://www.chinaweekly.cn/html/travel/42218.html" class="title">五岳至尊话泰山</a></p>
+ <p style="margin-top: 20px">泰山，位于山东省中部，隶属于泰安市，绵亘于泰安、济南、淄博三市之间。主峰玉皇顶海拔1545米，气势磅礴，历来就有“五岳之首”“五岳之长”“五岳之尊”“天下第一山”之美誉。泰山是世界自然与文化遗产和世界地质公园，被古人视为“直通帝座的天堂”，成为百姓崇拜、帝王告祭的“神山”，有“泰山安，四海则安”的说法。特别是炎炎夏日，泰山更是旅游避暑的好去处。</p>
+ <p style="margin-top: 90px">2022/10/13</p>
+ </div>
+ <div class="blog-right"></div>
+ </li>
+ <li>
+ <div class="blog-left">
+ <p ><a href="http://www.chinaweekly.cn/html/travel/42024.html" class="title">江南香格里拉——台州</a></p>
+ <p style="margin-top: 20px">台州位于浙江省中部沿海，海岸线长达651公里，近海有12个岛群、691个岛屿。台州居山面海，平原丘陵相间，域内地势由西向东倾斜，南面以雁荡山为屏，有括苍山、大雷山和天台山等主要山峰，形成“七山一水二分田”的格局。台州历史悠久，5000年前就有先民在此生息繁衍，域内景色以“佛、山、海、城、洞”五景最具特色，主要景点有天台山、江南长城、长屿硐天、神仙居和国家级历史文化名城临海市等。</p>
+ <p style="margin-top: 80px">2022/09/28</p>
+ </div>
+ <div class="blog-right"></div>
+ </li>
+ </ul>
+
+ <div class="page">
+ <a href="01.html">首页</a> <a href="01.html">1</a> <a href="03.html">2</a> <a href="04.html">3</a> <a href="05.html">尾页</a>
+ </div>
+</div>
+</body>
+</html>
